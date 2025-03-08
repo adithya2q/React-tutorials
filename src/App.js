@@ -1,11 +1,22 @@
 
 import './App.css';
+import About from './components/About/about';
+import Banner from './components/Banner/banner';
+
+// shorthand for creating compnents:'rafce'
 
 function App() {
   return (
     <div className="App">
-     <h1 style={{display:'flex', justifyContent: 'center'}}>Hello World</h1>
-     <h1 style={{display:'flex', justifyContent: 'center'}}>Hello World2!</h1>
+
+     <div style={{marginTop:'20px'}}>
+      <Banner /> 
+      {/* Lctrl+ component leads to that component */}
+     </div>
+     <div style={{marginTop:'20px'}}>
+      <About />
+     </div>
+
     </div>
   );
 }
