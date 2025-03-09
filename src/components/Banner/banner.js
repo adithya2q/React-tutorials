@@ -1,7 +1,12 @@
 import React from 'react'
+import CustomButton from '../Button'
 
 const Banner = () => {
-  return (
+
+    function buttonclicked(){
+      console.log("Button clicked");
+    }
+    return (
     <div style={{
         backgroundColor:"grey",
         height:'200px',
@@ -11,7 +16,7 @@ const Banner = () => {
         color:'whitesmoke'
     }}>
         <h1>Banner Page</h1>
-      
+        <CustomButton label={"Click to view banner"}  handleclick={buttonclicked}/>
     </div>
   )
 }
